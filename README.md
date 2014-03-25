@@ -1,4 +1,4 @@
-Check host status and push response to the Xively
+Host status
 =================
 
-check_host_xively
+Check host status and push response to the Xively
