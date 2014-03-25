@@ -95,7 +95,7 @@ def main():
 		sys.exit(1)
 	for o, a in opts:
 		if o in ("-h", "--help"):
-			print 'Usage: ' + sys.argv[0] + ' [ -f filename] [ -ip ip-address] '
+			print 'Usage: ' + sys.argv[0] + ' [ -f filename] [ -i ip-address] '
 			print 'File format -> id;ip'
 			sys.exit()
 		elif o in ("-i", "--ip-address"):
