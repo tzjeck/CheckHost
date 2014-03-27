@@ -47,12 +47,15 @@ def ping_ipv6(id,ip):
 		print "Error"
 	if RESPONSE == 0:
 		print 'Node is Alive %s' % ip
+		val=1
 	elif RESPONSE == 2: 
 		print 'No response %s' % ip
+		val=RESPONSE
 	else:
 		print 'Not Alive %s' % ip
+		val=0
 	if id != '-1':	
-		update(id,RESPONSE) 
+		update(id,val) 
 
 def ping_ipv4(id,ip):
 
@@ -62,12 +65,15 @@ def ping_ipv4(id,ip):
 		print "Error"
 	if RESPONSE == 0:
 		print 'Node is Alive %s' % ip
+		val=1
 	elif RESPONSE == 2: 
 		print 'No response %s' % ip
+		val=RESPONSE
 	else:
 		print 'Not Alive %s' % ip
+		val=0
 	if id != '-1':	
-		update(id,RESPONSE) 
+		update(id,val) 
 		
 def ping(data):
 	id,ip=data.split(';')
