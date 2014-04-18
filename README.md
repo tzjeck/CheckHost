@@ -6,7 +6,7 @@ Check host status and push response to the Xively
 Usage: chk.py [ -f filename] [ -i ip-address] 
 File format -> id;ip
 
-Using paramtear -i you will not push result to the Xively.
+Using parameter -i you will not push result to the Xively.
 
 -----------------
 example:
